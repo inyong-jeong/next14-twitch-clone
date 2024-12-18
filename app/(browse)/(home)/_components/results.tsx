@@ -6,6 +6,7 @@ import { ResultCard, ResultCardSkeleton } from "./result-card";
 export const Results = async () => {
   const data = await getStreams();
 
+  console.log('디버깅 ;;;', data)
   return (
     <div>
       <h2 className="text-lg font-semibold mb-4">

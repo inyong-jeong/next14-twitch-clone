@@ -14,11 +14,16 @@ interface UserPageProps {
 const UserPage = async ({
   params
 }: UserPageProps) => {
+
+  console.log('params', params)
   const user = await getUserByUsername(params.username);
 
+  console.log('user :::', user)
   if (!user || !user.stream) {
     notFound();
   }
+
+  
 
   const isFollowing = await isFollowingUser(user.id);
   const isBlocked = await isBlockedByUser(user.id);

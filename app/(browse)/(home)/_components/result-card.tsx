@@ -19,7 +19,7 @@ export const ResultCard = ({
   data,
 }: ResultCardProps) => {
   return (
-    <Link href={`/${data.user.username}`}>
+    <Link href={`/${data.user.id}`}>
       <div className="h-full w-full space-y-4">
         <Thumbnail
           src={data.thumbnailUrl}

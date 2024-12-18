@@ -103,7 +103,7 @@ export const StreamPlayer = ({
             collapsed && "hidden"
           )}
         >
-          <Chat
+          {/* <Chat
             viewerName={name}
             hostName={user.username}
             hostIdentity={user.id}
@@ -111,7 +111,7 @@ export const StreamPlayer = ({
             isChatEnabled={stream.isChatEnabled}
             isChatDelayed={stream.isChatDelayed}
             isChatFollowersOnly={stream.isChatFollowersOnly}
-          />
+          /> */}
         </div>
       </LiveKitRoom>
     </>
